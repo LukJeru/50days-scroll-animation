@@ -12,6 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
+  /*Get rid of horizontal scroll bar*/
+  overflow-x: hidden;
 }
 
 h1 {
@@ -29,12 +31,15 @@ h1 {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0,0,0, 0.3);
-  transform: translateX(200%);
+  /*move box 300% to the right on x axe*/
+  transform: translateX(300%);
+  /*set ease effect for transform so box moves slowly in*/
   transition: transform 0.4s ease;
 }
 
+/*select only every second box*/
 .box:nth-of-type(even) {
-  transform: translateX(-200%);
+  transform: translateX(-300%);
 }
 
 
